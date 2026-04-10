@@ -1,0 +1,55 @@
+2024-02-22 19:21:25,016 Job:StandardTask[taskName='zackpc-polars-1', tableSpace='default_ts', tag='QUERY', currentUserMemory=0, peakUserMemory=0, taskStatMachine=FINISHED, description='no more', memCapacity=-1, failedMessage='null', failedException=null, cancelMessage='null', errorMessages=[], createTime=1708600883499, endTime=1708600884062]
+analyzed info:
+	····DataSourceNode [dataSource=iterator, outputs=[BlankHeader:Nullable(String), Translate into Russian:Nullable(String)]]
+	···ProjectNode [Translate into Russian as __fcol_1, BlankHeader as __fcol_0]
+	··LimitNode [limit: 5000, offset: 0]
+	·ProjectNode [__fcol_0, __fcol_1]
+	OutputNode [__fcol_0:Nullable(String), __fcol_1:Nullable(String)]
+
+optimized info:
+	···DataSourceNode [dataSource=iterator, outputs=[BlankHeader:Nullable(String), Translate into Russian:Nullable(String)]]
+	··LimitNode [limit: 5000, offset: 0]
+	·ProjectNode [Translate into Russian as __fcol_1, BlankHeader as __fcol_0]
+	OutputNode [__fcol_0:Nullable(String), __fcol_1:Nullable(String)]
+
+stage[0]:StandardTask[taskName='stage#0#0_job_zackpc-polars-1', tableSpace='default_ts', tag='QUERY', currentUserMemory=0, peakUserMemory=0, taskStatMachine=FINISHED, description='no more detail', memCapacity=2147483648, failedMessage='null', failedException=null, cancelMessage='null', errorMessages=[], createTime=1708600883734, endTime=1708600884047]
+metric:
+000 ····StreamBlockIterator [tag:open, metric:count=1, sum=0ms] [tag:next, metric:count=1, sum=90ms]  rows=9 cols=2
+001 ···Pre(StreamBlockIterator) [tag:open, metric:count=1, sum=0ms] [tag:next, metric:count=1, sum=97ms]  rows=9 cols=2
+002 ··LimitOperator [tag:open, metric:count=1, sum=0ms] [tag:next, metric:count=1, sum=102ms]  rows=9 cols=2
+003 ·ProjectOperator [tag:open, metric:count=1, sum=0ms] [tag:next, metric:count=1, sum=103ms]  rows=9 cols=2
+004 OutputOperator [tag:open, metric:count=1, sum=0ms] [tag:next, metric:count=1, sum=106ms]  rows=9 cols=2
+
+
+
+
+2024-02-22 19:21:25,016 Job:StandardTask[taskName='zackpc-WRITE0eb637050ad749839390ff2df942c1d9-select-e4d63b58b967076c-2', tableSpace='default_ts', tag='ETL', currentUserMemory=0, peakUserMemory=0, taskStatMachine=FINISHED, description='no more', memCapacity=-1, failedMessage='null', failedException=null, cancelMessage='null', errorMessages=[], createTime=1708600883672, endTime=1708600885001]
+analyzed info:
+	········DataSourceNode [dataSource=iterator, outputs=[BlankHeader:Nullable(String), Translate into Russian:Nullable(String)]]
+	·······ProjectNode [Translate into Russian as __fcol_1, BlankHeader as __fcol_0]
+	······LimitNode [limit: 10000000, offset: 0]
+	·····ProjectNode [__fcol_0, __fcol_1]
+	····ProjectNode [__fcol_0 as BlankHeader, __fcol_1 as Translate into Russian]
+	···ProjectNode [BlankHeader, Translate into Russian]
+	··ProjectNode [BlankHeader, Translate into Russian]
+	·OutputNode [BlankHeader:Nullable(String), Translate into Russian:Nullable(String)]
+	Destination Node [default_ts.0eb637050ad749839390ff2df942c1d9-select-e4d63b58b967076c(WRITE)]
+
+optimized info:
+	···DataSourceNode [dataSource=iterator, outputs=[BlankHeader:Nullable(String), Translate into Russian:Nullable(String)]]
+	··LimitNode [limit: 10000000, offset: 0]
+	·OutputNode [BlankHeader:Nullable(String), Translate into Russian:Nullable(String)]
+	Destination Node [default_ts.0eb637050ad749839390ff2df942c1d9-select-e4d63b58b967076c(WRITE)]
+
+stage[0]:StandardTask[taskName='stage#0#0_job_zackpc-WRITE0eb637050ad749839390ff2df942c1d9-select-e4d63b58b967076c-2', tableSpace='default_ts', tag='ETL', currentUserMemory=0, peakUserMemory=0, taskStatMachine=FINISHED, description='no more detail', memCapacity=2147483647, failedMessage='null', failedException=null, cancelMessage='null', errorMessages=[], createTime=1708600883734, endTime=1708600885001]
+metric:
+000 ····StreamBlockIterator [tag:open, metric:count=1, sum=1ms] [tag:next, metric:count=1, sum=25ms]  rows=9 cols=2
+001 ···Pre(StreamBlockIterator) [tag:open, metric:count=1, sum=1ms] [tag:next, metric:count=1, sum=25ms]  rows=9 cols=2
+002 ··LimitOperator [tag:open, metric:count=1, sum=1ms] [tag:next, metric:count=1, sum=25ms]  rows=9 cols=2
+003 ·OutputOperator [tag:open, metric:count=1, sum=1ms] [tag:next, metric:count=1, sum=25ms]  rows=9 cols=2
+004 ChecksumImportDataBracket [tag:open, metric:count=1, sum=176ms] [tag:next, metric:count=1, sum=89ms]  rows=9 cols=2
+006 dataSource [tag:open, metric:count=0, sum=0ms] [tag:next, metric:count=1, sum=0ms]  rows=0 cols=0
+
+
+
+

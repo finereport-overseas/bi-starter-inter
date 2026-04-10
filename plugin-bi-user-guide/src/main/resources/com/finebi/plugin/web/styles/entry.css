@@ -1,0 +1,25 @@
+.user-guide-combo .child-down-list-item:hover {
+    color:#232e40;background-color:rgba(54,133,242,.1);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1a3685f2,endColorstr=#1a3685f2)
+}
+.user-guide-font {
+    color: rgba(26,26,26,0.8);
+}
+.user-guide-font .b-font {
+    *zoom: expression( this.runtimeStyle['zoom'] = '1',this.innerHTML = '&#xe7c1;');
+}
+.user-guide-font .b-font:before {
+    content: "\e7c1";
+    color: inherit;
+}
+.user-guide-font.disabled .b-font:before {
+    content: "\e7c1";
+    color: inherit;
+}
+
+.user-guide-down-list-combo>.bi-bubble-popup-view>.list-view-outer {
+    height: 90px;
+}
+
+.user-guide-down-list-combo>.bi-popup-view:not(.bi-bubble-popup-view)>.list-view-outer {
+    height: 60px;
+}

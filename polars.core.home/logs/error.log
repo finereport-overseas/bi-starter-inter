@@ -1,0 +1,2 @@
+19:21:19 ERROR [interrupt-pool-73-thread-1] XDB Server error.INTERNAL: not found table 0eb637050ad749839390ff2df942c1d9-select-e4d63b58b967076c in tablespace default_ts
+19:21:23 ERROR [cache-task-submit-pool-16-thread-2] XDB Server error.INTERNAL: not found table 0eb637050ad749839390ff2df942c1d9-select-e4d63b58b967076c in tablespace default_ts

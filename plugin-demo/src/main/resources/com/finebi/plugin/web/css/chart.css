@@ -1,0 +1,17 @@
+.chart-type-boxplot-column-icon .x-icon {
+    display: block;
+    background: url('${fineServletURL}/resources?path=/com/finebi/plugin/web/image/boxplot.png') no-repeat center center;
+    background-size: contain;
+}
+.chart-type-boxplot-column-icon .x-icon.hack {
+    background: url('${fineServletURL}/resources?path=/com/finebi/plugin/web/image/boxplot.png') no-repeat center center;
+}
+
+.chart-type-boxplot-column-disabled-icon .x-icon {
+    display: block;
+    background: url('${fineServletURL}/resources?path=/com/finebi/plugin/web/image/disable.png') no-repeat center center;
+    background-size: contain;
+}
+.chart-type-boxplot-column-disabled-icon .x-icon.hack {
+    background: url('${fineServletURL}/resources?path=/com/finebi/plugin/web/image/disable.png') no-repeat center center;
+}

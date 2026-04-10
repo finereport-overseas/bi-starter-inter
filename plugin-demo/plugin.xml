@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.finebi.plugin.boxplotchart</id>
+    <name><![CDATA[BI_BoxPlotChart]]></name>
+    <active>yes</active>
+    <version>1.1</version>
+    <env-version>11.0~11.0</env-version>
+    <jartime>2021-08-30</jartime>
+    <vendor>imp</vendor>
+    <description><![CDATA[BI Box Diagram Chart Plugin]]></description>
+    <bi-env-version>6.0~</bi-env-version>
+    <extra-decision>
+        <WebResourceProvider class="com.finebi.plugin.BIShowBoxPlotChart"/>
+        <WebResourceProvider class="com.finebi.plugin.BIDesignBoxPlotChart"/>
+    </extra-decision>
+    <function-recorder class="com.finebi.plugin.BIShowBoxPlotChart"/>
+    <function-recorder class="com.finebi.plugin.BIDesignBoxPlotChart"/>
+    <main-package>com.finebi</main-package>
+</plugin>

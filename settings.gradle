@@ -1,0 +1,3 @@
+rootProject.name = 'starter'
+include(':plugin-demo')
+include(':plugin-bi-user-guide')
