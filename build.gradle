@@ -53,6 +53,8 @@ dependencies {
     implementation 'com.finebi:fine-bi-middle:' + finebiVersion
     implementation 'com.finebi:fine-decision-bi:' + finebiVersion
     implementation 'com.finebi:fine-schedule-bi:' + finebiVersion
+    implementation 'com.finebi:fine-bi-query:' + finebiVersion //Versions after 7.0.9 require
+    implementation 'com.finebi:fine-bi-query-excel:' + finebiVersion //Versions after 7.0.9 require
 //    implementation 'com.finebi:fine-bi-spider-cluster:' + finebiVersion
 //    implementation 'com.finebi:fine-bi-spider-client:'+finebiVersion
     implementation 'com.fanruan.polars:polars-assembly:' + finePolarVersion
